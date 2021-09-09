@@ -17,7 +17,7 @@ main {
 .grid {
   display:grid;
   grid-template-columns: 1fr 1fr;
-  height:625px;
+  grid-template-rows: 300px 300px;
   box-shadow: 2px 5px 10px black;
 }
 
