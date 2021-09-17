@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Poppins, sans-serif;
   font-size: 10px;
@@ -8,23 +12,28 @@ body {
 
 main {
   background-color:#ed1b3e;
-  width:500px;
-  margin-left:auto;
-  margin-right:auto;
+  width:600px;
+  height:700px;
+  margin: auto;
   padding:80px;
 }
 
-.grid {
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 300px 300px;
-  box-shadow: 2px 5px 10px black;
+.box-shadow {
+  box-shadow: 5px 5px 20px 5px black;
+}
+
+.row {
+  display:flex;
+}
+
+.row > * {
+  width:100%;
 }
 
 .text-cell {
   background-color:#f79b8c;
-  text-align:center;
   padding:30px 20px;
+  text-align:center; 
 }
 
 .text-cell .title {
@@ -36,7 +45,7 @@ main {
 
 .photo-cell {
   background-size: cover;
-}
+} 
 
 .top-right {
   background-image: url(images/top-right.jpg);
